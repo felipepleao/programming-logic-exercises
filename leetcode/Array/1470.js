@@ -24,6 +24,17 @@
 // nums.length == 2n
 // 1 <= nums[i] <= 10^3
 
+// var shuffle = function (nums, n) {
+//   const matriz = [];
+
+//   nums.slice(0, n).map((number, i) => {
+//     matriz.push(number)
+//     matriz.push(nums[n + i])
+//   })
+
+//   return matriz
+// };
+
 var shuffle = function (nums, n) {
   const matriz = [];
   for (let i = 0; i < n; i++) {
@@ -37,16 +48,3 @@ var shuffle = function (nums, n) {
 const nums = [2, 5, 1, 3, 4, 7];
 const n = 3;
 
-// var shuffle = function (nums, n) {
-//   const matriz = [];
-
-//   nums.slice(0, n).map((number, i) => {
-//     matriz.push(number)
-//     matriz.push(nums[n + i])
-//   })
-
-//   return matriz
-// };
-
-
-console.log(shuffle(nums, n))
