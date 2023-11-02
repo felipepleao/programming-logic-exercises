@@ -32,6 +32,19 @@
 // Entrada: doces = [12,1,12], extraCandies = 10
 //  Saída: [verdadeiro, falso, verdadeiro]
 
-var kidsWithCandies = function(candies, extraCandies) {
-    
+var kidsWithCandies = function (candies, extraCandies) {
+  let maxCandies = 0;
+  let result = [];
+
+  for (let i = 0; i <= candies.length; i++) {
+    candies[i] > maxCandies ? (maxCandies = candies[i]) : null;
+  }
+
+  for (let i = 0; i < candies.length; i++) {
+    candies[i] + extraCandies >= maxCandies
+      ? result.push(true)
+      : result.push(false);
+  }
+
+  return result;
 };
