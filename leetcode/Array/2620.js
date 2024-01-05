@@ -35,4 +35,4 @@ var createCounter = function (n) {
   };
 };
 
-createCounter(10);
+createCounter();
