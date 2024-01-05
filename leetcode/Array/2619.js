@@ -20,10 +20,3 @@
 // arr is a valid JSON array
 // 0 <= arr.length <= 1000
 
-Array.prototype.last = function () {
-  if (this.length !== 0) {
-    return this.pop();
-  } else {
-    return -1;
-  }
-};
