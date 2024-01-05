@@ -27,6 +27,7 @@
 // - (4, 5) desde 4 < 5 e nums[4] + nums[5] = -8 < alvo
 // - (4, 6) desde 4 <6 e nums[4] + nums[6] = -4 <alvo
 
+
 var countPairs = function (nums, target) {
   
 };
