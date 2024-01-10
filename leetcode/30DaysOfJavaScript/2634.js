@@ -38,7 +38,6 @@
 var filter = function(arr, fn) {
 
   
-  
 };
 
 const arr = [1,2,3]
