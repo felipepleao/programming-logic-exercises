@@ -31,7 +31,7 @@ var createCounter = function (n) {
   console.log(n);
 
   return function (n) {
-    console.log(n++);
+    // console.log(n++);
   };
 };
 
