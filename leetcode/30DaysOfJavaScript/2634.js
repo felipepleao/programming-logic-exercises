@@ -12,8 +12,6 @@
 
 // Please solve it without the built-in Array.filter method.
 
- 
-
 // Example 1:
 
 // Input: arr = [0,10,20,30], fn = function greaterThan10(n) { return n > 10; }
@@ -35,13 +33,36 @@
 // Explanation:
 // Falsey values such as 0 should be filtered out
 
-var filter = function(arr, fn) {
+// var filter = function (arr, fn) {
+//   let newArr = [];
+//   return newArr = fn(arr);
+// };
 
-  
+// const arr = [1, 2, 3];
+
+// const maiorQue10 = function (n) {
+//   return n > 10;
+// };
+
+// console.log(filter)
+
+var filter = function (arr, fn) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (fn(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
 };
 
-const arr = [1,2,3]
+const arr = [1, 2, 3];
 
-const fn = function (n, i) {
-}
+const maiorQue10 = function (n) {
+  return n > 10;
+};
 
+// Chamando a função filter
+const resultado = filter(arr, maiorQue10);
+
+console.log(resultado);
